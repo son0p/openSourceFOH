@@ -1,0 +1,67 @@
+---
+title: "Technical Rider Example Using Rmarkdown"
+output:
+  html_document:
+    toc: true
+    theme: united
+---
+```{r, include=FALSE}
+library(DT)
+library(rmarkdown)
+````
+
+## Input List
+
+```{r, echo=TRUE} 
+x <- 1:48
+chan <- c(
+  "KICK" =	"AudixD6, ShortBoom",
+  "SNARE TOP" =	"Beta57, ShortBoom",
+  "< OVERHEAD" =	"AKG414, LongBoom",
+  "OVERHEAD >" =	"AKG414, LongBoom",
+  "BASS" = "D.I.",
+  "< PIANO" = "DPA 4099, Clip",
+  " PIANO >" = "DPA 4099, Clip"
+)
+y <- data.frame(INST=names(chan), NOTES=chan )
+datatable(y,class = 'cell-border stripe', caption = "Table 1: Input List ",options = list(
+  pageLength = 16, autoWidth = FALSE
+))
+```
+
+
+
+## Outputs List
+
+```{r, echo=TRUE}
+x <- 1:16
+chan <- c(
+  "HI PACK L" =	"Matrix 1 - HardOutput:1 ",
+  "HI PACK L" =	"Matrix 2 - HO:2 ",
+  "SUBS" =	"AUX 16 - HO:3 ",
+  "DRUM (Joe)"=	"IE - AUX 4 - HardOutput:4 ",
+  "BASS (Moe)"=	"Wege -AUX 5 - HardOutput:5 ",
+  "PIANO (Curly)"=	"IE - AUX 6 - HardOutput:6 " 
+)
+y <- data.frame(AUX=names(chan), NOTAS=chan )
+datatable(y ,class = 'cell-border stripe', caption = "Table 2: Outputs ",options = list(
+  pageLength = 16, autoWidth = FALSE
+))
+```
+
+## Contacts
+
+ Production: Bill bill@example.com
+
+FOH Engineer: Bull  bull@example.com
+
+## Set List
+
+### My Valentine
+Intro Piano
+
+### South
+Solo Bass
+
+### Outro
+Tutti, Fade Out
