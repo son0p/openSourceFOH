@@ -17,7 +17,8 @@ library(rmarkdown)
 
 ## Input List Example
 
-```{r, echo=TRUE} 
+```{r, echo=TRUE}
+
 item <- c(
   "KICK" =	"AudixD6, ShortBoom",
   "SNARE TOP" =	"Beta57, ShortBoom",
@@ -27,7 +28,8 @@ item <- c(
   "< PIANO" = "DPA 4099, Clip",
   " PIANO >" = "DPA 4099, Clip"
 )
-data <- data.frame(INST=names(item), NOTES=item )
+index <- 1:length(item)
+data <- data.frame(index,INST=names(item), NOTES=item )
 datatable(data, class = 'cell-border stripe', caption = "Table 1: Input List ",options = list(
   pageLength = 16
 ))
@@ -46,7 +48,8 @@ item <- c(
   "BASS (Moe)"=	"Wedge -AUX 5 - HardOutput:5 ",
   "PIANO (Curly)"=	"IE - AUX 6 - HardOutput:6 " 
 )
-data <- data.frame(AUX=names(item), NOTAS=item )
+index <- 1:length(item)
+data <- data.frame(index,AUX=names(item), NOTAS=item )
 datatable(data, class = 'cell-border stripe', caption = "Table 2: Outputs ",options = list(
   pageLength = 16
 ))
