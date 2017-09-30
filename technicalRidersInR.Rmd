@@ -18,8 +18,7 @@ library(rmarkdown)
 ## Input List Example
 
 ```{r, echo=TRUE} 
-x <- 1:48
-chan <- c(
+item <- c(
   "KICK" =	"AudixD6, ShortBoom",
   "SNARE TOP" =	"Beta57, ShortBoom",
   "< OVERHEAD" =	"AKG414, LongBoom",
@@ -28,8 +27,8 @@ chan <- c(
   "< PIANO" = "DPA 4099, Clip",
   " PIANO >" = "DPA 4099, Clip"
 )
-y <- data.frame(INST=names(chan), NOTES=chan )
-datatable(y,class = 'cell-border stripe', caption = "Table 1: Input List ",options = list(
+data <- data.frame(INST=names(item), NOTES=item )
+datatable(data, class = 'cell-border stripe', caption = "Table 1: Input List ",options = list(
   pageLength = 16
 ))
 ```
@@ -39,8 +38,7 @@ datatable(y,class = 'cell-border stripe', caption = "Table 1: Input List ",optio
 ## Outputs List Example
 
 ```{r, echo=TRUE}
-x <- 1:16
-chan <- c(
+item <- c(
   "HI PACK L" =	"Matrix 1 - HardOutput:1 ",
   "HI PACK L" =	"Matrix 2 - HO:2 ",
   "SUBS" =	"AUX 16 - HO:3 ",
@@ -48,8 +46,8 @@ chan <- c(
   "BASS (Moe)"=	"Wedge -AUX 5 - HardOutput:5 ",
   "PIANO (Curly)"=	"IE - AUX 6 - HardOutput:6 " 
 )
-y <- data.frame(AUX=names(chan), NOTAS=chan )
-datatable(y ,class = 'cell-border stripe', caption = "Table 2: Outputs ",options = list(
+data <- data.frame(AUX=names(item), NOTAS=item )
+datatable(data, class = 'cell-border stripe', caption = "Table 2: Outputs ",options = list(
   pageLength = 16
 ))
 ```
