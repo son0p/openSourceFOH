@@ -5,12 +5,17 @@ output:
     toc: true
     theme: united
 ---
-```{r, include=FALSE}
+
+## SourceCode
+  https://github.com/son0p/openSourceFOH
+
+## Libraries
+```{r, include=TRUE}
 library(DT)
 library(rmarkdown)
 ````
 
-## Input List
+## Input List Example
 
 ```{r, echo=TRUE} 
 x <- 1:48
@@ -25,13 +30,13 @@ chan <- c(
 )
 y <- data.frame(INST=names(chan), NOTES=chan )
 datatable(y,class = 'cell-border stripe', caption = "Table 1: Input List ",options = list(
-  pageLength = 16, autoWidth = FALSE
+  pageLength = 16
 ))
 ```
 
 
 
-## Outputs List
+## Outputs List Example
 
 ```{r, echo=TRUE}
 x <- 1:16
@@ -40,28 +45,47 @@ chan <- c(
   "HI PACK L" =	"Matrix 2 - HO:2 ",
   "SUBS" =	"AUX 16 - HO:3 ",
   "DRUM (Joe)"=	"IE - AUX 4 - HardOutput:4 ",
-  "BASS (Moe)"=	"Wege -AUX 5 - HardOutput:5 ",
+  "BASS (Moe)"=	"Wedge -AUX 5 - HardOutput:5 ",
   "PIANO (Curly)"=	"IE - AUX 6 - HardOutput:6 " 
 )
 y <- data.frame(AUX=names(chan), NOTAS=chan )
 datatable(y ,class = 'cell-border stripe', caption = "Table 2: Outputs ",options = list(
-  pageLength = 16, autoWidth = FALSE
+  pageLength = 16
 ))
 ```
 
-## Contacts
+## Plot Example
+
+```{r, echo=TRUE}
+plot(0:10, 0:10, type = "n")# setting up coord. system
+text(5,8, labels = "Drums", cex = 1.5)
+points(5, 7, col = "red", pch = 22)
+
+
+text(2,3, labels = "Piano", cex = 1.5)
+points(2,2 , col = "purple", pch = 24)
+
+text(8,4, labels = "Bass", cex = 1.5)
+points(8, 5, col = "brown", pch = 23, cex = 2.0)
+
+points(rnorm(100)/2, rnorm(100)/2, col = "blue", cex = 1.5)
+````
+
+## Extra Info Examples
+
+### Contacts Example
 
  Production: Bill bill@example.com
 
 FOH Engineer: Bull  bull@example.com
 
-## Set List
+### Set List Example
 
-### My Valentine
+#### My Valentine
 Intro Piano
 
-### South
+#### South
 Solo Bass
 
-### Outro
+#### Outro
 Tutti, Fade Out
