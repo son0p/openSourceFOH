@@ -1,0 +1,131 @@
+---
+title: "Fonseca Sinfonico"
+output:
+  html_document:
+    toc: true
+    theme: united
+---
+
+
+
+```{r, include=FALSE}
+library(DT)
+library(rmarkdown)
+library(rbokeh)
+````
+
+
+
+## Input List Fonseca Sinfonico
+
+```{r, echo=FALSE}
+
+item <- c(
+  "KICK IN"=	"A ",
+  "KICK OUT"=	" ",
+  "SNARE TOP"=	" ",
+  "SNARE BOTT"=	" ",
+  "SNARE CONDENSER"=	" ",
+  "HIHAT"=" ",
+  "T1 "=" ",
+  "T2 "=" ",
+  "FLOOR T "=" ",
+  "<OH "=" ",
+  "OH> "=" ",
+  " SPDS  "  = " ",
+  "TIMBAL "=" ",
+  "_ "=" ",
+  "DJEMBE "=" ",
+  "DJEMBE LOW "=" ",
+  "KJON "=" ",
+  "TOYS "=" ",
+  "CONGA HI "=" ",
+  "CONGA LOW "=" ",
+  "BONGO "=" ",
+  "GTR MARIACHI "=" ",
+  "BABY BASS "=" ",
+  "BASS "=" ",
+  "SQ 1 "=" ",
+  "SQ 2 "=" ",
+  "SQ 3 "=" ",
+  "SQ 4 "=" ",
+  "SQ 4 "=" ",
+  "SQ 6 "=" ",
+  "SQ 7 "=" ",
+  "ELEC JAIRO "=" ",
+  "_ "=" ",
+  "ELEC JFF "=" ",
+  "ACUSTICA JFF "=" ",
+  "ACUSTICA JAIRO/TORRES "=" ",
+  "NYLON JAIRO/TORRES "=" ",
+  "_  "=" ",
+  "KEY L "=" ",
+  "KEY R "=" ",
+  "_  "=" ",
+  "VOZ KEYS (MIGUEL)  "=" ",
+  " VIHEULA "=" ",
+  "ACCORDEON "=" ",
+  "GUITARRON "=" ",
+  "TATI "=" ",
+  "JFF "=" ",
+  "SPARE"=" ",
+  "1ER VIOLIN"=	"DPA 4099 	VC4099",
+  "1ER VIOLIN"=	"DPA 4099 	VC4099",
+  "1ER VIOLIN"=	"DPA 4099 	VC4099",
+  "1ER VIOLIN"=	"DPA 4099 	VC4099",
+  "1ER VIOLIN"=	"DPA 4099 	VC4099",
+  "2DO VIOLIN"=	"DPA 4099 	VC4099",
+  "2DO VIOLIN"="DPA 4099 x 2	VC4099",
+  "2DO VIOLIN"=	"DPA 4099 x 2	VC4099",
+  "2DO VIOLIN"=	"DPA 4099 x 2	VC4099",
+  "VIOLA"=	"DPA 4099 	VC4099",
+  "VIOLA"=	"DPA 4099 	VC4099",
+  "VIOLA"=	"DPA 4099 	VC4099",
+  "VIOLA"=	"DPA 4099 x 2	VC4099",
+  "CELLO"=	"DPA 4061 x 2"	,
+  "CELLO"	="DPA 4061 x 2"	,
+  "CELLO"	="DPA 4061 x 2"	,
+  "CELLO"	="DPA 4061 x 2"	,
+  "CONTRA B"=	"DPA 4061"	,
+  "CONTRA B"=	"DPA 4061"	,
+  "CONTRA B"=	"DPA 4061 x 2"	,
+  "CONTRA B"=	"DPA 4061 x 2"	,
+  "ARPA"="	B.Berry 4000",
+  "PIANO L"="	B.Berry 4000",
+  "PIANO R"="	B.Berry 4000",
+  "FLAUTAS"	="AKG 414 en 8"	,
+  "FLAUTAS"	="AKG 414 en 8"	,
+  "OBOE"	="AKG 414 en 8"	,
+  "CORNO INGLES" = "1	AKG 414" ,
+  "CLARINETE" = "1	AKG 414 en 8",
+  "FAGOT" = "1	AKG 414 en 8",
+  "CONTRA FAGOT" = "1	AKG 414 en 8",
+  "CORNOS" = "1	AKG 414" ,
+  "CORNOS" = "1	AKG 414" ,
+  "TROMPETAS"="	AKG 414" ,
+  "TROMBON"="	AKG 414" ,
+  "MARIMBA"="",
+  "GLOCKEN"="",
+  "VIBRAFONO"="",
+  "TAIKO"="",
+  "TIMBAL A"=	"AKG 414" ,
+  "TIMBAL B"=	"AKG 414" ,
+  "SN"="",
+  "GRAND KASSA"=	"Audix D6",
+  "MAIN L"="0",
+  "MAIN R"="0",
+  "TUBA"=	"AKG 414" ,
+  "CELESTA"="",
+  "CLARINETE BAJO"=" ",
+  "CORO 1"=" ",
+  "CORO 2"=" ",
+  "CORO 3"=" ",
+  "CORO 4"=" "
+)
+index <- 1:length(item)
+data <- data.frame(INST=names(item), NOTES=item )
+datatable(data, class = 'cell-border stripe',  caption = "Table 1: Input List ",options = list(                                                                                       pageLength = 48
+))
+```
+
+

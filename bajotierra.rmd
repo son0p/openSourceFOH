@@ -1,0 +1,132 @@
+---
+title: "Bajotierra"
+output:
+  html_document:
+    toc: true
+    theme: united
+---
+
+
+
+```{r, include=FALSE}
+library(DT)
+library(rmarkdown)
+library(rbokeh)
+
+```
+## Input List 
+```{r, echo=FALSE}
+instData <- c(
+    "KICK IN"="BETA 91",
+    "KICK OUT"="Audix D6",
+    "SNARE TOP"=".",
+    "SNARE BOTT"=".",
+    "HIHAT"=".",
+    "T1 "=". ",
+    "FLOOR T "=". ",
+    "<OH "=". ",
+    "OH> "=". ",
+    "TIMBAL "=". ",
+    "BONGO"=". ",
+    "BASS D.I."=". ",
+    "BASS MIC "=". ",
+    "GTR ELECTRICA LUCAS L"=". ",
+    "GTR ELECTRICA PAPOCHO R"=". ",
+    "KEY L"="D.I. ",
+    "KEY R"="D.I. ",
+    "VOZ KEYS (CUSCO) "=". ",
+    "VOZ DRUMS (ALEJO) "=". ",
+    "VOZ  GUITARRA L (LUCAS)"=". ",
+    "VOZ LIDER (CAMILO) "=". ",
+    "VOZ GUITARRA R (PAPO) "=". ",
+    "SPARE "=". ",
+    "HELP"="."
+)
+transData <-c(
+    "BETA91",
+    "AUDIX D6",
+    "SM57",
+    "KSM37",
+    "KSM37",
+    "904",
+    "904",
+    "KSM37",
+    "KSM37",
+    "BETA57",
+    "BETA57",
+    "D.I.",
+    "BETA57",
+    "BETA57",
+    "BETA57",
+    "D.I.",
+    "D.I.",
+    "BETA57",
+    "BETA57",
+    "BETA57",
+    "BETA57",
+    "BETA57",
+    "BETA58",
+    "BETA58"
+)
+boomData <- c(
+    "NO",
+    "SHORT",
+    "SHORT",
+    "NO",
+    "SHORT",
+    "CLAW",
+    "CLAW",
+    "LONG",
+    "LONG",
+    "SHORT",
+    "LONG",
+    "NO",
+    "SHORT",
+    "SHORT",
+    "SHORT",
+     "NO",
+     "NO",
+    "LONG",
+    "LONG",
+    "LONG",
+    "LONG",
+    "LONG",
+    "LONG",
+    "LONG"
+)
+index <- 1:length(item)
+data <- data.frame(CH=index, INST=names(instData), TRANS=transData, BOOM=boomData )
+datatable(data, class = 'cell-border stripe', caption = "Table 1: Input List ", rownames=FALSE,
+ extensions = 'Buttons', options = list(
+              dom = 'Bfrtip',
+              buttons = c('copy', 'csv', 'excel', 'pdf', 'print'),
+  pageLength = 32
+))
+
+```
+
+
+## Output monitores 
+
+
+
+```{r, echo=FALSE}
+
+mixes <- c(
+    "MIX1 "="DRUMS",
+    "MIX2 "="KEY",
+    "MIX3 "="BASS",
+    "MIX4 "="GTR 1 LUCAS",
+    "MIX5 "="GTR 2 PAPO",
+    "MIX6 "="LEAD VOX",
+    "MIX7 "="SIDE FILL L",
+    "MIX8 "="SIDE FILL R"
+)
+index <- 1:length(item)
+data <- data.frame(MIX=index,  NOTES=mixes )
+datatable(data, class = 'cell-border stripe', caption = "Table 2: Output List ", rownames=FALSE,  extensions = 'Buttons', options = list(
+              dom = 'Bfrtip',
+              buttons = c('copy', 'csv', 'excel', 'pdf', 'print'),
+pageLength = 8
+))
+```
