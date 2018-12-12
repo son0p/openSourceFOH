@@ -94,7 +94,7 @@ boomData <- c(
     "LONG",
     "LONG"
 )
-index <- 1:length(item)
+index <- 1:length(instData)
 data <- data.frame(CH=index, INST=names(instData), TRANS=transData, BOOM=boomData )
 datatable(data, class = 'cell-border stripe', caption = "Table 1: Input List ", rownames=FALSE,
  extensions = 'Buttons', options = list(
@@ -122,7 +122,7 @@ mixes <- c(
     "MIX7 "="SIDE FILL L",
     "MIX8 "="SIDE FILL R"
 )
-index <- 1:length(item)
+index <- 1:length(mixes)
 data <- data.frame(MIX=index,  NOTES=mixes )
 datatable(data, class = 'cell-border stripe', caption = "Table 2: Output List ", rownames=FALSE,  extensions = 'Buttons', options = list(
               dom = 'Bfrtip',
