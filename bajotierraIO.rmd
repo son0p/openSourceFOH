@@ -146,4 +146,12 @@ pageLength = 12
 ))
 ```
 
+## Contacto
+
+Produccion: Gonzalo "Chalo" Hernandez   chalo.fermin@gmail.com
+
+FOH: Federico Lopez  federico1113@gmail.com
+
+Monitores: Giovani Bedoya   audiogio@aol.com
+
 
