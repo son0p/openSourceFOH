@@ -137,15 +137,15 @@ datatable(data, class = 'cell-border stripe', caption = "Table 1: Input List ", 
 ```{r, echo=FALSE}
 
 mixes <- c(
-    "MIX1 "="DRUMS - ALEJO",
-    "MIX2 "="DRUMS - ALEJO",
-    "MIX3 Mono "="KEY - CUZCO",
-    "MIX4 "="BASS - ANDRES",
-    "MIX5 "="GTR 1 - LUCAS",
-    "MIX6 "="GTR 2 - PAPO",
-    "MIX7 "="LEAD VOX - CAMILO",
-    "MIX8 "="SIDE FILL L",
-    "MIX9 "="SIDE FILL R"
+    "MIX1 "="DRUMS - ALEJO (STEREO)",
+    "MIX2 "="DRUMS - ALEJO (STEREO)",
+    "MIX3 "="KEY - CUZCO (MONO)",
+    "MIX4 "="BASS - ANDRES (MONO)",
+    "MIX5 "="GTR 1 - LUCAS (MONO)",
+    "MIX6 "="GTR 2 - PAPO (MONO)",
+    "MIX7 "="LEAD VOX - CAMILO (MONO)",
+    "MIX8 "="SIDE FILL L (MONO)",
+    "MIX9 "="SIDE FILL R (MONO)"
 )
 
 speaker <- c(
