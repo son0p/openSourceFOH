@@ -1,0 +1,336 @@
+![](https://i.imgur.com/Ju4XHad.png)
+
+---
+output:
+  html_document:
+    toc: true
+    theme: cerulean
+---
+
+# IMPLOSIÓN EDIFICIO MONACO
+
+El	sistema	de	 audio	principal	deberá	garantizar 120db (SPL C-weight)	limpio	y	sin	distorsión	con	una respuesta	de	frecuencia	de	40	Hz	a	18	Khz	+/- 5db, que cubra al menos el 80% de la zona donde estará la audiencia.
+
+#### Sistemas Aprobados
+
+- d&b audiotechnik
+- L- Acoustics
+- Nexo
+- Meyer Sound
+
+Los monitores (wedges) deben ser de una misma marca y referencia.
+  
+#### Mesas Aprobadas
+
+- DIGICO SD10 - AVID S6L o referencia superior.
+
+- FOH
+- MONITORES
+- BROADCAST
+
+Cualquier otro modelo de Sistema o Mesa debe ser aprobado por el equipo tecnico.
+
+
+
+```{r, include=FALSE}
+library(DT)
+library(rmarkdown)
+library(rbokeh)
+
+```
+
+    
+## Input List 
+```{r, echo=FALSE}
+
+instData <- c(
+  
+    "KICK IN"=".",
+    "KICK OUT"=".",
+    "SNARE TOP DYN"=".",
+    "SNARE BOT DYN"=".",
+    "HIHAT"=".",
+    "T1 "=".",
+    "T2 "=".",
+    "FLOOR T "=".",
+    "<OH "=".",
+    "OH> "=".",
+    "PERC TOM"=".",
+    "PERC <OH"=".",
+    "PERC OH>"=".",
+    "BASS MIC "=".",
+    "BASS DI "=".",
+    "KEY L"=".",
+    "KEY R"=".",
+    "CUATRO"=".",
+    "ACUST GUIT"=".",
+    "ACUST JUANES"=".",
+    "JUANES"=".",
+    "YURI"=".",
+    "SPARE JUANES"=".",
+    "SPARE YURI"=".",
+    "GUEST 1"=".",
+    "GUEST 2"=".",
+    "GUEST 3"=".",
+    "GUEST 4"=".",
+    "GUEST 5"=".",
+    "GUEST 6"=".",
+    "1ER VIOLIN"=".",
+    "1ER VIOLIN"=".",
+    "1ER VIOLIN"=".",
+    "1ER VIOLIN"=".",
+    "1ER VIOLIN"=".",
+    "2DO VIOLIN"=".",
+    "2DO VIOLIN"=".",
+    "2DO VIOLIN"=".",
+    "2DO VIOLIN"=".",
+    "VIOLA"=".",
+    "VIOLA"=".",
+    "VIOLA"=".",
+    "VIOLA"=".",
+    "CELLO"=".",
+    "CELLO"=".",
+    "CELLO"=".",
+    "CELLO"=".",
+    "CONTRA B"=".",
+    "CONTRA B"=".",
+    "CONTRA B"=".",
+    "CONTRA B"=".",
+    "ARPA"=".",
+    "FLAUTAS"=".",
+    "FLAUTAS"=".",
+    "OBOE"=".",
+    "OBOE"=".",
+    "CLARINETE"=".",
+    "CLARINETE"=".",
+    "FAGOT"=".",
+    "FAGOT"=".",
+    "CORNOS"=".",
+    "CORNOS"=".",
+    "TROMPETAS"=".",
+    "TROMPETAS"=".",
+    "TROMBONES"=".",
+    "TROMBONES"=".",
+    "TUBA"=".",
+    "TIMBAL A"=".",
+    "TIMBAL B"=".",
+    "GRAND KASSA"=".",
+    "SNARE DRUM"=".",
+    "PERCUSSION A"=".",
+    "PERCUSSION B"=".",
+    "PROTOCOLO 1"=".",
+    "PROTOCOLO 2"=".",
+    "PRESIDENCIA 1"=".",
+    "PRESIDENCIA 2"=".",
+    "AMBIENTE MAIN L"=".",
+    "AMBIENTE MAIN R"=".",
+    "AMBIENTE REAR L"=".",
+    "AMBIENTE REAR R"=".",
+    "VTR L"=".",
+    "VTR R"="."
+    
+)
+transData <-c(
+    "BETA91",
+    "AUDIX D6",
+    "SM57",
+    "SM57",
+    "SM81",
+    "421",
+    "421",
+    "421",
+    "SM81",
+    "SM81",
+    "BETA 57",
+    "SM81",
+    "SM81",
+    "DPA 4099",
+    "RADIAL J48",
+    "RADIAL PRO DI",
+    "RADIAL PRO DI",
+    "RADIAL J48",
+    "RADIAL J48",
+    "RADIAL J48",
+    "SHURE WIRELESS",
+    "SHURE WIRELESS",
+    "SHURE WIRELESS",
+    "SHURE WIRELESS",
+    "SHURE WIRELESS",
+    "SHURE WIRELESS",
+    "SHURE WIRELESS",
+    "SHURE WIRELESS",
+    "SHURE WIRELESS",
+    "SHURE WIRELESS",
+    "DPA 4099 VC - DPA 4099 VC",
+    "DPA 4099 VC - DPA 4099 VC",
+    "DPA 4099 VC - DPA 4099 VC",
+    "DPA 4099 VC - DPA 4099 VC",
+    "DPA 4099 VC - DPA 4099 VC",
+    "DPA 4099 VC - DPA 4099 VC",
+    "DPA 4099 VC - DPA 4099 VC",
+    "DPA 4099 VC - DPA 4099 VC",
+    "DPA 4099 VC - DPA 4099 VC",
+    "DPA 4099 VC - DPA 4099 VC",
+    "DPA 4099 VC - DPA 4099 VC",
+    "DPA 4099 VC - DPA 4099 VC",
+    "DPA 4099 VC - DPA 4099 VC",
+    "DPA 4061 - DPA 4061",
+    "DPA 4061 - DPA 4061",
+    "DPA 4061 - DPA 4061",
+    "DPA 4061 - DPA 4061",
+    "DPA 4061",
+    "DPA 4061",
+    "DPA 4061 - DPA 4061",
+    "DPA 4061 - DPA 4061",
+    "DPA 4061",
+    "DPA 2011",
+    "DPA 2011",
+    "DPA 2011",
+    "DPA 2011",
+    "DPA 2011",
+    "DPA 2011",
+    "DPA 2011",
+    "DPA 2011",
+    "BETA57 - BETA 57",
+    "BETA57 - BETA 57",
+    "AKG 414",
+    "AKG 414",
+    "AKG 414",
+    "AKG 414",
+    "AKG 414",
+    "DPA 2011",
+    "DPA 2011",
+    "AUDIX D6",
+    "DPA 2011",
+    "DPA 2011",
+    "DPA 2011",
+    "SM58 WIRELESS",
+    "SM58 WIRELESS",
+    "RADIAL PRO DI",
+    "RADIAL PRO DI",
+    "SHURE KSM 32",
+    "SHURE KSM 32",
+    "SHURE KSM 32",
+    "SHURE KSM 32",
+    "RADIAL PRO DI",
+    "RADIAL PRO DI"
+)
+boomData <- c(
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "PERSIVAL",
+    "PERSIVAL",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "PERSIVAL",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "PERSIVAL",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "PERSIVAL",
+    "PERSIVAL"
+    )
+index <- 1:length(instData)
+data <- data.frame(CH=index, INST=names(instData), TRANS=transData, PROV=boomData )
+datatable(data, class = 'cell-border stripe', caption = "Table 1: Input List ", rownames=FALSE,
+ extensions = 'Buttons', options = list(
+              dom = 'Bfrtip',
+              buttons = c('copy', 'csv', 'excel', 'pdf', 'print'),
+  pageLength = 48
+))
+
+```
+
+
+## Output monitores 
+
+
+```
+
+# Contacto
+
+- Produccion-Stage: Julio Marin   (300) 612-0973   
+
+- FOH: Giovani Bedoya  (310) 406-0453   
+
+- Monitores: Federico Lopez   -(300) 361-1299   
+
+- Broadcast: Joel Solis   -(310) 445-8779   
+
+- Sistema: Daniel Rodriguez    -(310) 409-9906   
+
+- Direccion: Julio Cesar Sierra   (300) 785-8248   
+
+
+
+
