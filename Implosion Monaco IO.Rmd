@@ -317,17 +317,17 @@ datatable(data, class = 'cell-border stripe', caption = "Table 1: Input List ", 
 
 ```
 
-# Contacto
+## Contacto
 
 - Produccion-Stage: Julio Marin   (300) 612-0973   
 
 - FOH: Giovani Bedoya  (310) 406-0453   
 
-- Monitores: Federico Lopez   -(300) 361-1299   
+- Monitores: Federico Lopez   (300) 361-1299   
 
-- Broadcast: Joel Solis   -(310) 445-8779   
+- Broadcast: Joel Solis   (310) 445-8779   
 
-- Sistema: Daniel Rodriguez    -(310) 409-9906   
+- Sistema: Daniel Rodriguez    (310) 409-9906   
 
 - Direccion: Julio Cesar Sierra   (300) 785-8248   
 
