@@ -7,29 +7,21 @@ output:
     theme: cerulean
 ---
 
-# IMPLOSIÓN EDIFICIO MONACO
+## Demolición Edificio Monaco
 
 El	sistema	de	 audio	principal	deberá	garantizar 120db (SPL C-weight)	limpio	y	sin	distorsión	con	una respuesta	de	frecuencia	de	40	Hz	a	18	Khz	+/- 5db, que cubra al menos el 80% de la zona donde estará la audiencia.
 
-#### Sistemas Aprobados
+## Sistema Aprobado
 
-- d&b audiotechnik
-- L- Acoustics
-- Nexo
 - Meyer Sound
 
 Los monitores (wedges) deben ser de una misma marca y referencia.
   
-#### Mesas Aprobadas
+## Mesas Aprobadas
 
-- DIGICO SD10 - AVID S6L o referencia superior.
-
-- FOH
-- MONITORES
-- BROADCAST
-
-Cualquier otro modelo de Sistema o Mesa debe ser aprobado por el equipo tecnico.
-
+- FOH  DiGiCo SD8
+- MONITORES  DiGiCo SD8
+- BROADCAST  DiGiCo SD8
 
 
 ```{r, include=FALSE}
@@ -311,11 +303,11 @@ datatable(data, class = 'cell-border stripe', caption = "Table 1: Input List ", 
 
 ```
 
+## Stage Plot
+
 
 ## Output monitores 
 
-
-```
 
 ## Contacto
 
