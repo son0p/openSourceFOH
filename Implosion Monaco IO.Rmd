@@ -15,7 +15,7 @@ El	sistema	de	 audio	principal	deberá	garantizar 120db (SPL C-weight)	limpio	y	
 
 - Meyer Sound
 
-Los monitores (wedges) deben ser de una misma marca y referencia.
+Los monitores deben ser de una misma marca.
   
 ## Mesas Aprobadas
 
@@ -305,9 +305,12 @@ datatable(data, class = 'cell-border stripe', caption = "Table 1: Input List ", 
 
 ## Stage Plot
 
+- Pendiente
+
 
 ## Output monitores 
 
+- Pendiente
 
 ## Contacto
 
@@ -321,7 +324,14 @@ datatable(data, class = 'cell-border stripe', caption = "Table 1: Input List ", 
 
 - Sistema: Daniel Rodriguez    (310) 409-9906   
 
-- Direccion: Julio Cesar Sierra   (300) 785-8248   
+- Direccion: Julio Cesar Sierra   (300) 785-8248
+
+## Set List
+
+- Son Batá (cantantes) + La Toma (vocalista) + Filarmed + Banda
+- Yuri Buenaventura + Filarmed + Banda
+- Juanes + Filarmed + Guitar Acoust + Guitar Juanes
+
 
 
 
