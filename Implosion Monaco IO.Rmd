@@ -11,17 +11,21 @@ output:
 
 El	sistema	de	 audio	principal	deberá	garantizar 120db (SPL C-weight)	limpio	y	sin	distorsión	con	una respuesta	de	frecuencia	de	40	Hz	a	18	Khz	+/- 5db, que cubra al menos el 80% de la zona donde estará la audiencia.
 
-## Sistema Aprobado
+## Sistema
 
 - Meyer Sound
 
 Los monitores deben ser de una misma marca.
   
-## Mesas Aprobadas
+## Mesas
 
 - FOH  DiGiCo SD8
 - MONITORES  DiGiCo SD8
 - BROADCAST  DiGiCo SD8
+
+## Grabacion
+
+- 2 Digigrid MBG
 
 
 ```{r, include=FALSE}
@@ -322,7 +326,9 @@ datatable(data, class = 'cell-border stripe', caption = "Table 1: Input List ", 
 
 - Broadcast: Joel Solis   (310) 445-8779   
 
-- Sistema: Daniel Rodriguez    (310) 409-9906   
+- Sistema: Daniel Rodriguez    (310) 409-9906 
+
+- Grabacion: WireMusic 
 
 - Direccion: Julio Cesar Sierra   (300) 785-8248
 
@@ -330,7 +336,7 @@ datatable(data, class = 'cell-border stripe', caption = "Table 1: Input List ", 
 
 - Son Batá (cantantes) + La Toma (vocalista) + Filarmed + Banda
 - Yuri Buenaventura + Filarmed + Banda
-- Juanes + Filarmed + Guitar Acoust + Guitar Juanes
+- Juanes + Filarmed + Guitar Acoust + Guitar Juanes + Banda
 
 
 
