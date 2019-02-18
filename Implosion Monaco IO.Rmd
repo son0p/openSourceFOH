@@ -302,7 +302,7 @@ datatable(data, class = 'cell-border stripe', caption = "Table 1: Input List ", 
  extensions = 'Buttons', options = list(
               dom = 'Bfrtip',
               buttons = c('copy', 'csv', 'excel', 'pdf', 'print'),
-  pageLength = 48
+  pageLength = 12
 ))
 
 ```
