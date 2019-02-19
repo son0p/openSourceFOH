@@ -317,7 +317,43 @@ datatable(data, class = 'cell-border stripe', caption = "Table 1: Input List ", 
 
 ## Output monitores 
 
-- Pendiente
+```{r, echo=FALSE}
+
+mixes <- c(
+    "MIX1L","MIX1R",
+    "MIX2L","MIX2R",
+    "MIX3",
+    "MIX4",
+    "MIX5",
+    "MIX6",
+    "MIX7",
+    "MIX8",
+"MIX9",
+"MIX10",
+"MIX11",
+"MIX12",
+"MIX13",
+"MIX14",
+"MIX15",
+"MIX16",
+"MIX17",
+"MIX18",
+"MIX19",
+"MIX20",
+"MIX21",
+"MIX22"
+)
+
+port <- c("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24")
+talent <- c("IE JUANES","IE YURI","IE CAMILO *LATOMA*","IE JOHN JAMIE *SON BATA*","IE JOHN FREDY *SON BATA*","IE CARLOS *SON BATA*","IE INVITADO 1", "IE INVITADO 2",  "IE DIRECTOR","IE CONCERTINO","IE DRUMS","IE PERC","IE BASS","IE GTR","IE KEYS","SIDE 1 ACA", "SIDE 1 ALLÁ","SIDE 2 ACA", "SIDE 2 ALLA", "SIDE 3 ACA", "SIDE 3 ALLA", "PISO 1", "PISO 2", "PISO 3")
+index <- 1:length(mixes)
+data <- data.frame(MIX=mixes, TALENTO=talent, SALIDA=port )
+datatable(data, class = 'cell-border stripe', caption = "Table 2: Output List ", rownames=FALSE,  extensions = 'Buttons', options = list(
+              dom = 'Bfrtip',
+              buttons = c('copy', 'csv', 'excel', 'pdf', 'print'),
+pageLength = 12
+))
+```
 
 ## Contacto
 
