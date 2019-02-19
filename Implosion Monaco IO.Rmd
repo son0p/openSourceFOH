@@ -71,6 +71,7 @@ instData <- c(
     "GUEST 4"=".",
     "GUEST 5"=".",
     "GUEST 6"=".",
+    "GUEST 7"=".",
     "1ER VIOLIN"=".",
     "1ER VIOLIN"=".",
     "1ER VIOLIN"=".",
@@ -157,6 +158,7 @@ transData <-c(
     "SHURE WIRELESS",
     "SHURE WIRELESS",
     "SHURE WIRELESS",
+    "SHURE WIRELESS",
     "DPA 4099 VC - DPA 4099 VC",
     "DPA 4099 VC - DPA 4099 VC",
     "DPA 4099 VC - DPA 4099 VC",
@@ -212,6 +214,7 @@ transData <-c(
     "RADIAL PRO DI"
 )
 boomData <- c(
+    "PERSIVAL",
     "PERSIVAL",
     "PERSIVAL",
     "PERSIVAL",
