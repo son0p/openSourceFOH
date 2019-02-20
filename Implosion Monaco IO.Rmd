@@ -7,7 +7,7 @@ output:
     theme: cerulean
 ---
 
-## Demolición Edificio Monaco
+## Derribo Edificio Monaco
 
 El	sistema	de	 audio	principal	deberá	garantizar 120db (SPL C-weight)	limpio	y	sin	distorsión	con	una respuesta	de	frecuencia	de	40	Hz	a	18	Khz	+/- 5db, que cubra al menos el 80% de la zona donde estará la audiencia.
 
@@ -312,8 +312,7 @@ datatable(data, class = 'cell-border stripe', caption = "Table 1: Input List ", 
 
 ## Stage Plot
 
-- Pendiente
-
+![](https://i.imgur.com/PSOlGb4.png)
 
 ## Output monitores 
 
@@ -359,6 +358,74 @@ pageLength = 12
 ))
 ```
 
+## Set List
+
+- Yuri Buenaventura + Filarmed + Banda
+- Son Batá (cantantes) + La Toma (vocalista) + Filarmed + Banda
+- Juanes + Filarmed + Guitar Acoust + Guitar Juanes + Banda
+
+## Minuto a Minuto
+
+1 - Inicio de la transmisión
+
+2 - VIDEO 1
+
+3 - PRESENTADORES
+
+4 - VIDEO 2
+
+5 - PRESENTADORES
+
+6 - VIDEO 3 
+
+7 - PRESENTADORES
+
+8 - VIDEO 4 
+
+9 - PRESENTADORES
+
+10 - VIDEO 5
+
+11 - PRESENTADORES - PASO A TARIMA PRINCIPAL
+
+12 - SALUDO DE LOS PRESENTADORES: INTRODUCCIÓN
+
+13 - VIDEO - QUE NOS PASO?
+
+14 - PRESENTADORES
+
+15 - VIDEO VICTIMAS
+
+16 - PRESENTADORES
+
+17 - ENTREGA DE MEDALLAS Y MEMORIAL
+
+18 - PRESENTADORES
+
+19 - DISCURSO DEL PRESIDENTE
+
+20 - DISCURSO DEL ALCALDE
+
+21 - ACTIVACION DEL BOTON QUE DA LA ORDEN DEL DERRIBO - INICIO DEL MOMENTO MUSICAL
+
+22 - ORQUESTA FILARMÓNICA - YURI BUENAVENTURA
+
+23 - ORQUESTA FILARMÓNICA - LA TOMA, SON BATÁ Y CREW PELIGROSOS
+
+24 - ORQUESTA FILARMÓNICA - JUANES
+
+25 - RETOMA TELEMEDELLIN CON SUS PRESENTADORES
+
+26 - ENTREVISTA CON INVITADO 1
+
+27 - ENTREVISTA CON INVITADO 2
+
+28 - ENTREVISTA CON INVITADO 3
+
+29 - PRESENTADORES DESPIDEN LA TRANSMISIÓN
+
+30 - CABEZOTE
+
 ## Contacto
 
 - Produccion-Stage: Julio Marin   (300) 612-0973   
@@ -374,12 +441,6 @@ pageLength = 12
 - Grabacion: WireMusic 
 
 - Direccion: Julio Cesar Sierra   (300) 785-8248
-
-## Set List
-
-- Son Batá (cantantes) + La Toma (vocalista) + Filarmed + Banda
-- Yuri Buenaventura + Filarmed + Banda
-- Juanes + Filarmed + Guitar Acoust + Guitar Juanes + Banda
 
 
 
