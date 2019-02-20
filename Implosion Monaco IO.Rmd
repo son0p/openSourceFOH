@@ -35,6 +35,9 @@ library(rbokeh)
 
 ```
 
+## Stage Plot
+
+![](https://i.imgur.com/PSOlGb4.png)
     
 ## Input List 
 ```{r, echo=FALSE}
@@ -310,9 +313,6 @@ datatable(data, class = 'cell-border stripe', caption = "Table 1: Input List ", 
 
 ```
 
-## Stage Plot
-
-![](https://i.imgur.com/PSOlGb4.png)
 
 ## Output monitores 
 
