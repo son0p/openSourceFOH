@@ -67,7 +67,9 @@ instData <- c(
     "VOZ LIDER (CAMILO) "=". ",
     "VOZ BASS (PAPO) "=". ",
     "SPARE "=". ",
-    "HELP"="."
+    "HELP"=".",
+    "AMBIENTE L"=".",
+    "AMBIENTE R"="."
 )
 transData <-c(
     "BETA91",
@@ -92,7 +94,9 @@ transData <-c(
     "BETA57",
     "BETA57",
     "BETA58",
-    "BETA58"
+    "BETA58",
+    "SM 81",
+    "SM 81"
 )
 boomData <- c(
     "NO",
@@ -115,6 +119,8 @@ boomData <- c(
     "LONG",
     "LONG",
     "ROUND STAND",
+    "LONG",
+    "LONG",
     "LONG",
     "LONG",
     "LONG"
