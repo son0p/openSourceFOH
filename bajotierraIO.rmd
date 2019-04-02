@@ -28,7 +28,7 @@ Cualquier otro modelo de Sistema o Mesa debe ser aprobado por el equipo tecnico.
 
 # StagePlot
 
-![](https://i.imgur.com/RKI4Rq9.jpg)
+![](https://i.imgur.com/aspNT1E.png)
 
 
 
@@ -59,13 +59,13 @@ instData <- c(
     "BASS D.I."=". ",
     "BASS MIC "=". ",
     "GTR ELECTRICA LUCAS L"=". ",
-    "GTR ELECTRICA PAPOCHO R"=". ",
+    "GTR ELECTRICA CUERVO R"=". ",
     "KEY L"="D.I. ",
     "KEY R"="D.I. ",
     "VOZ KEYS (CUSCO) "=". ",
     "VOZ  GUITARRA L (LUCAS)"=". ",
     "VOZ LIDER (CAMILO) "=". ",
-    "VOZ GUITARRA R (PAPO) "=". ",
+    "VOZ BASS (PAPO) "=". ",
     "SPARE "=". ",
     "HELP"="."
 )
@@ -140,10 +140,10 @@ mixes <- c(
     "MIX1 "="DRUMS - ALEJO (STEREO)",
     "MIX2 "="DRUMS - ALEJO (STEREO)",
     "MIX3 "="KEY - CUZCO (MONO)",
-    "MIX4 "="BASS - ANDRES (MONO)",
+    "MIX4 "="GTR 2 - CUERVO (MONO)",
     "MIX5 "="GTR 1 - LUCAS (MONO)",
-    "MIX6 "="GTR 2 - PAPO (MONO)",
-    "MIX7 "="LEAD VOX - CAMILO (MONO)",
+    "MIX6 "="LEAD VOZ - CAMILO (MONO)",
+    "MIX7 "="BASS - PAPO (MONO)",
     "MIX8 "="SIDE FILL L (MONO)",
     "MIX9 "="SIDE FILL R (MONO)"
 )
