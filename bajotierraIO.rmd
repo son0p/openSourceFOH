@@ -22,13 +22,67 @@ Los monitores (wedges) deben ser de una misma marca y referencia.
   
 #### Mesas Aprobadas
 
-- Yamaha CL5, Digico SD9, Avid SC48 o referencias superiores.
+- Yamaha CL5, Digico SD9, Avid SC48 o referencias superiores con un puerto MADI de salida disponible.
 
 Cualquier otro modelo de Sistema o Mesa debe ser aprobado por el equipo tecnico.
 
+# Backline
+
+#### Drums (Alejo)
+
+- Ludwig Calssic Mapple
+- Ludwig Supraphonic 14x6.5 con Ambassador Coated
+- Tom Aire 13" o 12" (Emperor Coated)
+- Tom piso 16" (Emperor Coated)
+- Bombo 24" o 22" (Emperor Coated)
+- Pedal DW 5000
+- 5 Stand boom para platillo
+- 3 Stand para redoblandte
+- 1 Stand HiHat de 3 patas
+- Silla de tornillo
+- Tapete firme
+- 1 Set Bongos 
+- 1 Stand Bongos
+- 1 Toma 120V
+
+#### Keys (Cuzco)
+
+- 1 Roland Jazz Chorus 120
+- 1 Key Stand Doble
+- 3 Key Stand Sencillos
+- D.I. Radial PRO D2
+- 8 Tomas 120V
+
+#### Gtr 1 (Lucas)
+
+- Fender Hot Rod o Fender Twin Reverb
+- Spare de Amplificador, igual referencia
+- 2 Stand dobles (Stage y Backstage) 
+- 1 Toma 120V
+
+#### Gtr 2 (Cuervo)
+
+- VOX AC30 o Marshall JCM2000 Cabina 1960
+- Spare de Amplificador, igual referencia
+- 1 Stand de teclado Sencillo
+- 2 Stand dobles (Stage y Backstage) 
+- 1 Toma 120V
+
+#### Bajo (Papo)
+
+- Cabezote Ampeg Classic o Ampeg SVT4 PRO
+- Cabina Ampeg 8x10
+- Spare de Cabezote y Cabina, igual referencia
+- D.I. Radial JDI
+
+#### Cantantes
+
+- 4 Stand Tripod Boom para Microfono
+
+
 # StagePlot
 
-![](https://i.imgur.com/aspNT1E.png)
+![](https://i.imgur.com/juf1SRz.png)
 
 
 
@@ -58,11 +112,11 @@ instData <- c(
     "BONGO"=". ",
     "BASS D.I."=". ",
     "BASS MIC "=". ",
-    "GTR ELECTRICA LUCAS L"=". ",
-    "GTR ELECTRICA CUERVO R"=". ",
+    "GTR LUCAS + Acústica con pedal A/B"=". ",
+    "GTR CUERVO"=". ",
     "KEY L"="D.I. ",
     "KEY R"="D.I. ",
-    "VOZ KEYS (CUSCO) "=". ",
+    "VOZ KEYS (CUZCO) "=". ",
     "VOZ  GUITARRA L (LUCAS)"=". ",
     "VOZ LIDER (CAMILO) "=". ",
     "VOZ BASS (PAPO) "=". ",
