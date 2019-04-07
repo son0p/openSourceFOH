@@ -58,6 +58,7 @@ Cualquier otro modelo de Sistema o Mesa debe ser aprobado por el equipo tecnico.
 - Fender Hot Rod o Fender Twin Reverb
 - Spare de Amplificador, igual referencia
 - 2 Stand dobles (Stage y Backstage) 
+- 1 Stand de teclado Sencillo
 - 1 Toma 120V
 
 #### Gtr 2 (Cuervo)
@@ -228,6 +229,33 @@ pageLength = 12
 
 ))
 ```
+
+
+# Playlist FEPX
+
+#### - [Intro Todo bien]
+#### - 1	Todo Bien
+#### - 2	Hi-Fi
+#### - 3	Jimmy
+#### - [Acuático]
+#### - 4	Slam Dance
+#### - 5	Las Puertas
+#### - 6	Policía
+#### - [Los Días]
+#### - 7	Monkeys
+#### - 8	Tristes Trópicos
+#### - 9	Reina
+#### - [Cristales]
+#### - 10	Ojos
+#### - 11	Mirella
+#### - 12	Justiciero
+#### - [Lupus]
+#### - 13	El Pobre
+#### - [Duque regresa a batería]
+#### - 14	Vigilante
+#### - 15	Violentos
+#### - [Los Días Final]
+
 
 # Contacto
 
