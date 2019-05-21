@@ -1,0 +1,405 @@
+![](https://i.imgur.com/3r7DWsX.png)
+
+---
+output:
+  html_document:
+    toc: true
+    theme: cerulean
+---
+
+
+## Sistema
+
+- Teatro Metropolitano
+
+## Mesas
+
+- FOH  DiGiCo S10
+- MONITORES  DiGiCo S10
+
+
+## Grabacion
+
+- 2 Digigrid MBG
+
+
+```{r, include=FALSE}
+library(DT)
+library(rmarkdown)
+library(rbokeh)
+
+```
+
+## Stage Plot
+
+![](https://i.imgur.com/R2fuyA0.jpg)
+    
+## Input List 
+```{r, echo=FALSE}
+
+instData <- c(
+  
+    "KICK IN"=".",
+    "KICK OUT"=".",
+    "SNARE TOP DYN"=".",
+    "SNARE BOT DYN"=".",
+    "HIHAT"=".",
+    "T1 "=".",
+    "T2 "=".",
+    "T3 "=".",
+    "Floor Tom "=".",
+    "<OH "=".",
+    "OH>"=".",
+    "BASS DI"=".",
+    "BASS MIC"=".",
+    "GTR 1 L"=".",
+    "GTR 1 R"=".",
+    "GTR 2"=".",
+    "GTR ACUS 1 MIC"=".",
+    "GTR ACUS 1 DI"=".",
+    "GTR ACUS 2 MIC"=".",
+    "GTR ACUS 2 DI"=".",
+    "KEY1 L"=".",
+    "KEY1 R"=".",
+    "KEY2 L"=".",
+    "KEY2 R"=".",
+    "FX L"=".",
+    "FX R"=".",
+    "CORO 1"=".",
+    "CORO 2"=".",
+    "LEAD 1"=".",
+    "FX RET LEAD 1 L"=".",
+    "FX RET LEAD 1 R"=".",
+    "LEAD 2"=".",
+    "FX RET LEAD 1 L"=".",
+    "FX RET LEAD 2 R"=".",
+    "LEAD 3"=".",
+    "FX RET LEAD 3 L"=".",
+    "FX RET LEAD 3 R"=".",
+    "SPARE LEAD 1"=".",
+    "SPARE LEAD 2"=".",
+    "SPARE LEAD 3"=".",
+    "VIOLIN 1A"=".",
+    "VIOLIN 1B"=".",
+    "VIOLIN 1C"=".",
+    "VIOLIN 1D"=".",
+    "VIOLIN 2A"=".",
+    "VIOLIN 2B"=".",
+    "VIOLIN 2C"=".",
+    "VIOLA A"=".",
+    "VIOLA B"=".",
+    "VIOLA C"=".",
+    "CELLO A"=".",
+    "CELLO B"=".",
+    "CELLO C"=".",
+    "CONTRA A"=".",
+    "CONTRA B"=".",
+    "CONTRA C"=".",
+    "CONTRA D"=".",
+    "ARPA"=".",
+    "FLAUTAS"=".",
+    "OBOES"=".",
+    "CLARINETES"=".",
+    "FAGOTES"=".",
+    "CORNOS A"=".",
+    "CORNOS B"=".",
+    "TROMPETAS"=".",
+    "TROMBONES"=".",
+    "TUBA"=".",
+    "TIMBAL A"=".",
+    "TIMBAL B"=".",
+    "GRAND KASSA"=".",
+    "PERC 1"=".",
+    "PERC 2"=".",
+    "PERC 3"=".",
+    "PERC 4"=".",
+    "PERC 5"=".",
+    "CORO INFANTIL A"=".",
+    "CORO INFANTIL B"=".",
+    "CORO INFANTIL C"=".",
+    "CORO INFANTIL D"=".",
+    "CORO INFANTIL E"=".",
+    "CORO INFANTIL F"=".",
+    "AMBIENTE L"=".",
+    "AMBIENTE R"=".",
+    "TALK DIRECTOR"=".",
+    "TALK PRODUCTOR"=".",
+    "TALK FOH"=".",
+    "TALK MONITORES"=".",
+    "VTR"="."
+    
+)
+transData <-c(
+    "BETA91",
+    "AUDIX D6",
+    "SM57",
+    "SM57",
+    "SM81",
+    "4099",
+    "4099",
+    "4099",
+    "4099",
+    "SM81",
+    "SM81",
+    "RADIAL",
+    "BETA 52",
+    "SM 57",
+    "SM 57",
+    "SM 57",
+    "KSM 32",
+    "RADIAL",
+    "KSM 32",
+    "RADIAL",
+    "RADIAL",
+    "RADIAL",
+    "RADIAL",
+    "RADIAL",
+    "RADIAL",
+    "RADIAL",
+    "SM58",
+    "SM58",
+    "BETA 87 WIRELESS",
+    "RADIAL",
+    "RADIAL",
+    "BETA 87 WIRELESS",
+    "RADIAL",
+    "RADIAL",
+    "BETA 87 WIRELESS",
+    "RADIAL",
+    "RADIAL",
+    "BETA 87 WIRELESS",
+    "BETA 87 WIRELESS",
+    "BETA 87 WIRELESS",
+    "DPA 4099 VC - DPA 4099 VC",
+    "DPA 4099 VC - DPA 4099 VC",
+    "DPA 4099 VC - DPA 4099 VC",
+    "DPA 4099 VC - DPA 4099 VC",
+    "DPA 4099 VC - DPA 4099 VC",
+    "DPA 4099 VC - DPA 4099 VC",
+    "DPA 4099 VC - DPA 4099 VC",
+    "DPA 4099 VC - DPA 4099 VC",
+    "DPA 4099 VC - DPA 4099 VC",
+    "DPA 4099 VC - DPA 4099 VC",
+    "DPA 4061 - DPA 4061",
+    "DPA 4061 - DPA 4061",
+    "DPA 4061 - DPA 4061",
+    "DPA 4061",
+    "DPA 4061",
+    "DPA 4061",
+    "DPA 4061",
+    "DPA 4099",
+    "DPA 2011 - DPA 2011",
+    "DPA 2011 - DPA 2011",
+    "DPA 2011 - DPA 2011",
+    "DPA 2011 - DPA 2011",
+    "BETA 57 - BETA 57",
+    "BETA 57 - BETA 57",
+    "AKG 414",
+    "AKG 414",
+    "AKG 414",
+    "DPA 2011",
+    "DPA 2011",
+    "BETA 52",
+    "DPA 2011",
+    "DPA 2011",
+    "DPA 2011",
+    "DPA 2011",
+    "DPA 2011",
+    "SCHOEPS",
+    "SCHOEPS",
+    "SCHOEPS",
+    "SCHOEPS",
+    "SCHOEPS",
+    "SCHOEPS",
+    "SM81",
+    "SM81",
+    "SM58",
+    "SM58",
+    "SM58",
+    "SM58",
+    "RADIAL"
+)
+boomData <- c(
+    "GENESIS",
+    "GENESIS",
+    "TEATRO",
+    "TEATRO",
+    "TEATRO",
+    "GENESIS",
+    "GENESIS",
+    "GENESIS",
+    "GENESIS",
+    "TEATRO",
+    "TEATRO",
+    "GENESIS",
+    "TEATRO",
+    "TEATRO",
+    "TEATRO",
+    "TEATRO",
+    "TEATRO",
+    "GENESIS",
+    "TEATRO",
+    "GENESIS",
+    "GENESIS",
+    "GENESIS",
+    "GENESIS",
+    "GENESIS",
+    "GENESIS",
+    "GENESIS",
+    "TEATRO",
+    "TEATRO",
+    "GENESIS",
+    "GENESIS",
+    "GENESIS",
+    "GENESIS",
+    "GENESIS",
+    "GENESIS",
+    "GENESIS",
+    "GENESIS",
+    "GENESIS",
+    "GENESIS",
+    "GENESIS",
+    "GENESIS",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "TEATRO",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "VALDEZ PRODUCCIONES",
+    "TEATRO",
+    "TEATRO",
+    "TEATRO",
+    "TEATRO",
+    "TEATRO",
+    "TEATRO",
+    "TEATRO"
+    )
+index <- 1:length(instData)
+data <- data.frame(CH=index, INST=names(instData), TRANS=transData, PROV=boomData )
+datatable(data, class = 'cell-border stripe', caption = "Table 1: Input List ", rownames=FALSE,
+ extensions = 'Buttons', options = list(
+              dom = 'Bfrtip',
+              buttons = c('copy', 'csv', 'excel', 'pdf', 'print'),
+  pageLength = 12
+))
+
+```
+
+
+## Output monitores 
+
+```{r, echo=FALSE}
+
+mixes <- c(
+    "MIX1L","MIX1R",
+    "MIX2L","MIX2R",
+    "MIX3",
+    "MIX4",
+    "MIX5",
+    "MIX6",
+    "MIX7",
+    "MIX8",
+"MIX9",
+"MIX10",
+"MIX11",
+"MIX12",
+"MIX13",
+"MIX14",
+"MIX15",
+"MIX16",
+"MIX17",
+"MIX18",
+"MIX19",
+"MIX20",
+"MIX21",
+"MIX22",
+"MIX23",
+"MIX24",
+"MIX25",
+"MIX26"
+)
+
+port <- c("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28")
+talent <- c("?","?", "?","?","?","?","?","?","?", "?",  "?","?","?","?","?","?","?","?", "SIDE 1 ACA", "SIDE 1 ALLÁ","SIDE 2 ACA", "SIDE 2 ALLA", "SIDE 3 ACA", "SIDE 3 ALLA","PISO 1 Director","PISO 2Concertino","PISO 3","PISO 4")
+index <- 1:length(mixes)
+data <- data.frame(MIX=mixes, TALENTO=talent, SALIDA=port )
+datatable(data, class = 'cell-border stripe', caption = "Table 2: Output List ", rownames=FALSE,  extensions = 'Buttons', options = list(
+              dom = 'Bfrtip',
+              buttons = c('copy', 'csv', 'excel', 'pdf', 'print'),
+pageLength = 12
+))
+```
+
+## Set List
+
+- Welcome to the Jungle
+- Civil War
+- Estranged
+- Mr. Brownstone
+- Patience
+- Live and Let Die
+- You Could Be Mine
+- Knockin' on Heaven's Door
+- Sorry
+- Don't Cry (Original)
+- My Michelle
+- November Rain
+- Sweet Child O' Mine
+- Paradise City
+- Nightrain
+
+## Minuto a Minuto
+
+Por Definir
+
+## Contacto
+
+- Produccion: Julio Marin   (300) 612-0973   
+
+- FOH: Giovani Bedoya  (310) 406-0453   
+
+- Monitores: Federico Lopez   (300) 361-1299   
+
+- Director Orquestal: Juan David Osorio   (301) 6486443
+
+- Director Musical: Daniel Mejia: (311) 6118293
+
+
+
+
+
