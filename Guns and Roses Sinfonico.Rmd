@@ -359,12 +359,14 @@ mixes <- c(
 "MIX25",
 "MIX26",
 ".",
-"."
+".",
+".",
+","
 )
 
-port <- c("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30")
+port <- c("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32")
 
-talent <- c("ieVOZ1 L Santiago","ieVOZ1 R Santiago", "ieVOZ2 L Alejandro","ieVOZ2 R Alejandro","ieDRUMS L","ieDRUMS R","ie BASS L","ieBASS R","ieGTR1 L Juan", "ieGTR1 R Juan",  "ieGTR2 L Pablo","ieGTR2 R Pablo","ieKEY L Melisa","ieKEY R Melisa","ieCORO1 L Eliana","ieCORO1 R Eliana","ieDIR L Juan","ieDIR R Juan", "SIDE 1 ACA", "SIDE 1 ALLÁ","SIDE 2 ACA", "SIDE 2 ALLA", "SIDE 3 ACA", "SIDE 3 ALLA","PISO A FRONT","PISO B FRONT","PISO DIRECTOR","PISO VIOLIN","PISO CORO2 SANDRA", "PISO GTR Feedback"   )
+talent <- c("ieVOZ1 L Santiago","ieVOZ1 R Santiago", "ieVOZ2 L Alejandro","ieVOZ2 R Alejandro","ieVOZ3 L ACOSTA","ieVOZ3 R ACOSTA","ieDRUMS L","ieDRUMS R","ie BASS L","ieBASS R","ieGTR1 L Juan", "ieGTR1 R Juan",  "ieGTR2 L Pablo","ieGTR2 R Pablo","ieKEY L Melisa","ieKEY R Melisa","ieCORO1 L Eliana","ieCORO1 R Eliana","ieDIR L Juan","ieDIR R Juan", "SIDE 1 ACA", "SIDE 1 ALLÁ","SIDE 2 ACA", "SIDE 2 ALLA", "SIDE 3 ACA", "SIDE 3 ALLA","PISO A FRONT","PISO B FRONT","PISO DIRECTOR","PISO VIOLIN","PISO CORO2 SANDRA", "PISO GTR Feedback"   )
 
 
 
