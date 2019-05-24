@@ -37,6 +37,10 @@ library(rbokeh)
 ## Input List 
 ```{r, echo=FALSE}
 
+rack1 <- (1:56)
+rack2 <- (1:33)
+racks <- c(rack1,rack2)
+
 instData <- c(
   
     "KICK IN"=".",
@@ -316,12 +320,12 @@ boomData <- c(
     
     )
 index <- 1:length(instData)
-data <- data.frame(CH=index, INST=names(instData), TRANS=transData, PROV=boomData )
+data <- data.frame(CH=index, RACK=racks,  INST=names(instData), TRANS=transData, PROV=boomData )
 datatable(data, class = 'cell-border stripe', caption = "Table 1: Input List ", rownames=FALSE,
  extensions = 'Buttons', options = list(
               dom = 'Bfrtip',
               buttons = c('copy', 'csv', 'excel', 'pdf', 'print'),
-  pageLength = 12
+  pageLength = 56
 ))
 
 ```
