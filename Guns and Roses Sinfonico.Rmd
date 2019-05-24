@@ -65,20 +65,20 @@ instData <- c(
     "KEY2 R"=".",
     "FX L"=".",
     "FX R"=".",
-    "CORO 1"=".",
-    "CORO 2"=".",
-    "LEAD 1"=".",
-    "FX RET LEAD 1 L"=".",
-    "FX RET LEAD 1 R"=".",
-    "LEAD 2"=".",
-    "FX RET LEAD 1 L"=".",
-    "FX RET LEAD 2 R"=".",
-    "LEAD 3"=".",
-    "FX RET LEAD 3 L"=".",
-    "FX RET LEAD 3 R"=".",
-    "SPARE LEAD 1"=".",
-    "SPARE LEAD 2"=".",
-    "SPARE LEAD 3"=".",
+    "CORO ELIANA"=".",
+    "CORO SANDRA"=".",
+    "LEAD SANTIAGO"=".",
+    "FX RET SANTIAGO L"=".",
+    "FX RET SANTIAGO R"=".",
+    "LEAD ALEJANDRO"=".",
+    "FX RET ALEJANDRO L"=".",
+    "FX RET ALEJANDRO R"=".",
+    "LEAD ANDRES"=".",
+    "FX RET ANDRES  L"=".",
+    "FX RET ANDRES  R"=".",
+    "SPARE SANTIAGO"=".",
+    "SPARE ALEJANDRO"=".",
+    "SPARE ANDRES"=".",
     "VIOLIN 1A"=".",
     "VIOLIN 1B"=".",
     "VIOLIN 1C"=".",
@@ -109,17 +109,18 @@ instData <- c(
     "TIMBAL A"=".",
     "TIMBAL B"=".",
     "GRAND KASSA"=".",
-    "PERC 1"=".",
-    "PERC 2"=".",
-    "PERC 3"=".",
-    "PERC 4"=".",
-    "PERC 5"=".",
+    "GLOCKENSPIEL"=".",
+    "MARIMBA"=".",
+    "CAMPANA TUBULAR"=".",
+    "CONGAS+TOYS"=".",
+    "SNARE+PLATILLO"=".",
     "CORO INFANTIL A"=".",
     "CORO INFANTIL B"=".",
     "CORO INFANTIL C"=".",
     "CORO INFANTIL D"=".",
     "CORO INFANTIL E"=".",
     "CORO INFANTIL F"=".",
+    "GTR ACUS JUAN DAVID"=".",
     "AMBIENTE L"=".",
     "AMBIENTE R"=".",
     "TALK DIRECTOR"=".",
@@ -127,6 +128,7 @@ instData <- c(
     "TALK FOH"=".",
     "TALK MONITORES"=".",
     "VTR"="."
+    
     
 )
 transData <-c(
@@ -211,6 +213,7 @@ transData <-c(
     "SCHOEPS",
     "SCHOEPS",
     "SCHOEPS",
+    "KSM 32",
     "SM81",
     "SM81",
     "SM58",
@@ -218,6 +221,7 @@ transData <-c(
     "SM58",
     "SM58",
     "RADIAL"
+    
 )
 boomData <- c(
     "GENESIS",
@@ -307,7 +311,9 @@ boomData <- c(
     "TEATRO",
     "TEATRO",
     "TEATRO",
+    "TEATRO",
     "TEATRO"
+    
     )
 index <- 1:length(instData)
 data <- data.frame(CH=index, INST=names(instData), TRANS=transData, PROV=boomData )
@@ -355,7 +361,7 @@ mixes <- c(
 )
 
 port <- c("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28")
-talent <- c("ieGTR1 L","ieGTR1 R", "ieGTR2 L","ieGTR2 R","ieDRUMS","ieBASS","ieKEYS","ieLEAD Voz 1","ieLEAD Voz 2", "ieLEAD Vox 3",  "CORO 1","CORO 2","PISO FRONT 1","PISO FRONT 2","PISO FRONT 3","PISO GTR FEEDBACK","?","?", "SIDE 1 ACA", "SIDE 1 ALLÁ","SIDE 2 ACA", "SIDE 2 ALLA", "SIDE 3 ACA", "SIDE 3 ALLA","PISO 1 Director","PISO 2Concertino","PISO 3","PISO 4")
+talent <- c("ieGTR1 L JUAN","ieGTR1 R JUAN", "ieGTR2 L PABLO","ieGTR2 R PABLO","ieDRUMS DANIEL","ieBASS DAVID","ieKEYS MELISA","ieLEAD Voz 1 DANIEL","ieLEAD Voz 2 ALEJANDRO", "ieLEAD Vox 3 ELIANA",  "CORO 1 ELIANA","CORO 2 SANDRA","PISO FRONT 1","PISO FRONT 2","PISO FRONT 3","PISO GTR FEEDBACK","?","?", "SIDE 1 ACA", "SIDE 1 ALLÁ","SIDE 2 ACA", "SIDE 2 ALLA", "SIDE 3 ACA", "SIDE 3 ALLA","PISO 1 Director","PISO 2Concertino","PISO 3","PISO 4")
 index <- 1:length(mixes)
 data <- data.frame(MIX=mixes, TALENTO=talent, SALIDA=port )
 datatable(data, class = 'cell-border stripe', caption = "Table 2: Output List ", rownames=FALSE,  extensions = 'Buttons', options = list(
