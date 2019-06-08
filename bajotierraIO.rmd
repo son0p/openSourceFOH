@@ -22,7 +22,7 @@ Los monitores (wedges) deben ser de una misma marca y referencia.
   
 #### Mesas Aprobadas
 
-- Yamaha CL5, Digico SD9, Avid SC48 o referencias superiores con un puerto MADI de salida disponible.
+- Yamaha CL5, Digico SD9, o referencias superiores con un puerto MADI de salida disponible.
 
 Cualquier otro modelo de Sistema o Mesa debe ser aprobado por el equipo tecnico.
 
@@ -47,6 +47,7 @@ Cualquier otro modelo de Sistema o Mesa debe ser aprobado por el equipo tecnico.
 
 #### Keys (Cuzco)
 
+- 1 Nord Stage
 - 1 Roland Jazz Chorus 120
 - 1 Key Stand Doble
 - 3 Key Stand Sencillos
@@ -230,31 +231,6 @@ pageLength = 12
 ))
 ```
 
-
-# Playlist FEPX
-
-#### - [Intro Todo bien]
-#### - 1	Todo Bien
-#### - 2	Hi-Fi
-#### - 3	Jimmy
-#### - [Acuático]
-#### - 4	Slam Dance
-#### - 5	Las Puertas
-#### - 6	Policía
-#### - [Los Días]
-#### - 7	Monkeys
-#### - 8	Tristes Trópicos
-#### - 9	Reina
-#### - [Cristales]
-#### - 10	Ojos
-#### - 11	Mirella
-#### - 12	Justiciero
-#### - [Lupus]
-#### - 13	El Pobre
-#### - [Duque regresa a batería]
-#### - 14	Vigilante
-#### - 15	Violentos
-#### - [Los Días Final]
 
 
 # Contacto
