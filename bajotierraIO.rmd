@@ -22,7 +22,7 @@ Los monitores (wedges) deben ser de una misma marca y referencia.
   
 #### Mesas Aprobadas
 
-- Yamaha CL5, Digico SD9, o referencias superiores con un puerto MADI de salida disponible.
+- Yamaha CL5, Digico SD9 o referencias superiores con un puerto MADI de salida disponible.
 
 Cualquier otro modelo de Sistema o Mesa debe ser aprobado por el equipo tecnico.
 
